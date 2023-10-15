@@ -1,25 +1,19 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+/*rainbow*/
 
-int main() {
-    int N;
-    std::cin >> N;
-    std::vector<int> A(N);
-
-    for (int i = 0; i < N; i++) {
-        std::cin >> A[i];
-    }
-
-    std::sort(A.begin(), A.end());
-
-    if (std::unique(A.begin(), A.end()) == A.end()) {
-        std::cout << "Yes" << std::endl;
-    } else {
-        std::cout << "No" << std::endl;
-    }
-
-    return 0;
+#include<bits/stdc++.h>
+using namespace std;
+int n,a,b;
+int main(){
+	cin>>n>>a;
+	for(int i=2;i<=n;i++){
+		cin>>b;
+		if(a!=b){
+			cout<<"No";
+			return 0; 
+		}
+	}
+	cout<<"Yes";
+	return 0;
 }
 
 /* 
