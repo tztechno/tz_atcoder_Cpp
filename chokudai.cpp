@@ -10,9 +10,8 @@ int main() {
     std::cin >> a >> b;
   
 // S[b-1],S[a-1]=S[a-1],S[b-1]
-    std::swap(S[a - 1], S[b - 1]);
+    std::swap(S[a-1], S[b-1]);
   
-//  char ans=''.join(S)    
     std::cout << S << std::endl;
 
     return 0;
