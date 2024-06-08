@@ -32,7 +32,6 @@ int main() {
     int M=0;
     str X:
     std::cin >> X;
-    std::cout << N << std::endl;
     for (int i = 0; i < len(X); ++i) {
         x=X[i]
         M+=int(x)
